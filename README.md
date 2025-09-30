@@ -30,7 +30,7 @@ As reflected within the overall [Directory Structure](#directory-structure), the
 .\patterns\<pattern-name>
 ├── README.md              # Entry point for documentation for this pattern
 ├── docs/                  # Any additional documentation beyond README.md
-└── src/                   # Different framework source code examples
+└── examples/              # Different framework source code examples
     ├── <framework-1>/     # Framework 1 folder
     ├── semantic-kernel/   # Example folder for semantic kernel source code
     ├── langgraph/         # Example folder for langgraph source code
@@ -42,5 +42,5 @@ As reflected within the overall [Directory Structure](#directory-structure), the
   This is a brief title for the pattern and should be 1 - 3 words (5 words max)
 - **`README.md`**
   This is the entry point for documentation that is specific to the particular pattern being covered in the patterns folder. This README should follow the template defined within `/docs/templates/pattern.md`
-- **`src/`**
+- **`examples/`**
   This folder will hold the exemplar implementations of the patterns. The folder will contain subfolders that are specific the framework used for the exemplar (e.g., Semantic Kernel, LangGraph, LangChain)
