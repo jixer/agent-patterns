@@ -2,7 +2,8 @@ import os
 from typing import Annotated
 from langchain_core.tools import tool
 from langchain_openai import AzureChatOpenAI
-from langchain_core.messages import HumanMessage, ToolMessage
+from langchain_core.messages import HumanMessage
+from langgraph.prebuilt import create_react_agent
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -35,19 +36,18 @@ llm = AzureChatOpenAI(
 # Create a list of tools
 tools = [add]
 
-# Bind tools to the model
-llm_with_tools = llm.bind_tools(tools)
+# Create the ReAct agent
+agent = create_react_agent(llm, tools)
 
-query = "What is 1 + 2?"
-response = llm_with_tools.invoke([HumanMessage(content=query)])
+query = {
+    "messages": ["What is 1 + 2?"]
+}
+response = agent.invoke(query)
 
-print("\nIn this example, the tool call is not invoked directory so you will "
-      "either get the Tool call response back from the LLM or a message if "
-      "it didn't find a relevant tool")
-if response.tool_calls:
-    print(f"\nTool call response:")
-    for tool_call in response.tool_calls:
-        print(f"  - Tool: {tool_call['name']}")
-        print(f"    Arguments: {tool_call['args']}")
-else:
-    print(f"AI Response: {response.content}")
+print("Response:", response['messages'][-1].content)
+print('Full chain:')
+for i, message in enumerate(response['messages']):
+    if message.type == 'ai' and message.tool_calls:
+        print(f" {i+1}. {message.type}: {message.content} Tool call->{message.tool_calls[0]})")
+    else:
+        print(f" {i+1}. {message.type}: {message.content}")
