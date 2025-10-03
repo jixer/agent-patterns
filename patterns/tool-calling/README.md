@@ -43,29 +43,8 @@ Tool Calling is applicable in various scenarios, including:
 - **Enterprise Applications**: Agents that integrate with business operations, such as invoking AWS Lambda functions or SaaS services.
 
 ## Example
-Below is a basic example of a Tool Calling agent:
-
-```python
-# Define a tool
-class CalculatorTool:
-    def add(self, a, b):
-        return a + b
-
-# Agent logic
-class ToolCallingAgent:
-    def __init__(self):
-        self.tools = {"calculator": CalculatorTool()}
-
-    def handle_query(self, query):
-        if "add" in query:
-            tool = self.tools["calculator"]
-            return tool.add(2, 3)  # Example arguments
-
-# Usage
-agent = ToolCallingAgent()
-response = agent.handle_query("Use calculator to add numbers")
-print(response)  # Output: 5
-```
+Full examples are provided here:
+- Agent Framework: [./agent-framework](./agent-framework)
 
 ## Benefits
 - **Dynamic Tool Selection**: Agents can adapt to various tasks by selecting appropriate tools.
