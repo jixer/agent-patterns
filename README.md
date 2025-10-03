@@ -1,12 +1,20 @@
 This repository is intended to be used as a toolkit. The source code and documentation herein are not intended to be used as a framework or end-to-end solution. The source code can be forked at an individual level and included in another project as an accelerator, but this repository intends to yield value by documenting different patterns and approaches with lightweight examples implemented using different agentic frameworks.
 
-# Contents
+# Repository Overview
 Within this repository, you will find the following guidance:
 - **Patterns**
   These are the lowest level of guidance. They are framework-agnostic and represent agentic engineering patterns that can be used across any framework. These are the core building blocks that will be used together to build end-to-end agent solutions. For each pattern, you will find an overview of the pattern along with code samples as described in the [Pattern Directory Structure](#pattern-structure).
 
 - **Recipes**
   Recipes are akin to a cooking recipe. They will leverage numerous different ingredients (patterns) and utensils (agentic frameworks) to create an entire dish (end-to-end agent example). With recipes, we will leverage specific platforms and frameworks (e.g., Semantic Kernel, Agent Framework, Copilot Studio). These recipes are there to provide larger exemplar implementations of patterns, but are not here to dictate the only optimal selection of frameworks and platforms that could be used.
+
+# Patterns Table of Contents
+The following patterns are captured currently in this repository:
+- [**Tool Calling**](patterns/tool-calling/README.md): Tool Calling, also known as Function Calling, is a design pattern that enables agents to interact with external systems, APIs, or functions. This pattern allows agents to go beyond language-only reasoning by invoking external tools to perform specific tasks.
+
+> [!WARNING]
+> There are many more patterns than what are captured in this repository. Do not consider this an exhaustive list. We will capture as many as we can with the time we have.
+
 
 # Directory Structure
 Here is the structure for how patterns are captured within this repository:
