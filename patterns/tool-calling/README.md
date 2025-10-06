@@ -45,7 +45,8 @@ Tool Calling is applicable in various scenarios, including:
 
 ## Example
 Full examples are provided here:
-- Agent Framework: [./agent-framework](./agent-framework)
+- Agent Framework (C#): [./agent-framework](./agent-framework)
+- LangGraph (Python): [./lang-graph](./lang-graph/)
 
 ## Benefits
 - **Dynamic Tool Selection**: Agents can adapt to various tasks by selecting appropriate tools.
