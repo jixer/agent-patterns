@@ -24,6 +24,7 @@ In the simplest form, incorporating a tool into an LLM call would like like this
 > ref: [https://langchain-ai.github.io/langgraph/concepts/agentic_concepts](https://langchain-ai.github.io/langgraph/concepts/agentic_concepts)
 
 Since the output from the LLM yields just the payload for the tool call, basic implementations of a tool calling workflow will, minimally, have a flow like follows:
+
 ![Tool Calling Flow](./docs/assets/tool-calling-flow.png)
 
 ## Architecture
