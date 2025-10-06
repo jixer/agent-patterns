@@ -1,13 +1,12 @@
-This repository is intended to be used as a toolkit. The source code and documentation herein is not intended to be used as a framework or end-to-end solution. The source code can be forked at an individual level and included in another project as an accelerator, but this repository intends to yield value by documenting different patterns and approaches with very light weight examples implemented using different agentic frameworks.
+This repository is intended to be used as a toolkit. The source code and documentation herein are not intended to be used as a framework or end-to-end solution. The source code can be forked at an individual level and included in another project as an accelerator, but this repository intends to yield value by documenting different patterns and approaches with lightweight examples implemented using different agentic frameworks.
 
 # Contents
 Within this repository, you will find the following guidance:
 - **Patterns**
-  These are the lowest level guidance. They are framework agnostic and represent agentic engineerins patterns that can be used across any framework. These are the core building blocks that will be used together in order to build end-to-end agent solutions. For each pattern, you will find an overview of the pattern along with code samples as described in the [Pattern Directory Structure](#pattern-structure)
+  These are the lowest level of guidance. They are framework-agnostic and represent agentic engineering patterns that can be used across any framework. These are the core building blocks that will be used together to build end-to-end agent solutions. For each pattern, you will find an overview of the pattern along with code samples as described in the [Pattern Directory Structure](#pattern-structure).
 
 - **Recipes**
-  Recipes are akin to a cooking recipe. They will leverage numerous different ingredients (patterns) and utensils (agentic frameworks) in order to create an entire dish (end-to-end agent example). With recipes, we will leverage specific platforms and frameworks (e.g., Semantic Kernel, Agent Framework, Copilot Studio). These recipes are there to provide larger exemplar implementations of patterns, but are not here to dictate the only optimal selection of frameworks and platforms could not be used.
-
+  Recipes are akin to a cooking recipe. They will leverage numerous different ingredients (patterns) and utensils (agentic frameworks) to create an entire dish (end-to-end agent example). With recipes, we will leverage specific platforms and frameworks (e.g., Semantic Kernel, Agent Framework, Copilot Studio). These recipes are there to provide larger exemplar implementations of patterns, but are not here to dictate the only optimal selection of frameworks and platforms that could be used.
 
 # Directory Structure
 Here is the structure for how patterns are captured within this repository:
@@ -19,7 +18,7 @@ Here is the structure for how patterns are captured within this repository:
 │
 ├── docs/              # Overall documentation (not specific patterns)
 │   ├── templates/     # Documentation templates
-│   │   └── patern.md  # General purpose template to create pattern docs
+│   │   └── pattern.md # General-purpose template to create pattern docs
 │   └── ...
 │
 └── patterns/          # Root directory where all patterns are documented
@@ -34,7 +33,7 @@ There are some repeating directory formats that will be covered in the subsectio
 - Pattern Folder
 
 ## Pattern Structure
-As reflected within the overall [Directory Structure](#directory-structure), there are repeating folders for "patterns". These will all maintain there own structure as follows:
+As reflected within the overall [Directory Structure](#directory-structure), there are repeating folders for "patterns". These will all maintain their own structure as follows:
 ```bash
 .\patterns\<pattern-name>
 ├── README.md              # Entry point for documentation for this pattern
@@ -48,8 +47,8 @@ As reflected within the overall [Directory Structure](#directory-structure), the
 
 **Pattern Structure Further Explanation:**
 - **pattern-name**
-  This is a brief title for the pattern and should be 1 - 3 words (5 words max)
+  This is a brief title for the pattern and should be 1–3 words (5 words max).
 - **`README.md`**
-  This is the entry point for documentation that is specific to the particular pattern being covered in the patterns folder. This README should follow the template defined within `/docs/templates/pattern.md`
+  This is the entry point for documentation that is specific to the particular pattern being covered in the patterns folder. This README should follow the template defined within `/docs/templates/pattern.md`.
 - **`examples/`**
-  This folder will hold the exemplar implementations of the patterns. The folder will contain subfolders that are specific the framework used for the exemplar (e.g., Semantic Kernel, LangGraph, LangChain)
+  This folder will hold the exemplar implementations of the patterns. The folder will contain subfolders that are specific to the framework used for the exemplar (e.g., Semantic Kernel, LangGraph, LangChain).
