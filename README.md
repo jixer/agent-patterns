@@ -1,4 +1,4 @@
-
+This repository is intended to be used as a toolkit. The source code and documentation herein is not intended to be used as a framework or end-to-end solution. The source code can be forked at an individual level and included in another project as an accelerator, but this repository intends to yield value by documenting different patterns and approaches with very light weight examples implemented using different agentic frameworks.
 
 # Directory Structure
 Here is the structure for how patterns are captured within this repository:
