@@ -1,3 +1,6 @@
 # Repository specific ignores
 .ai-inputs/
 
+# OS Files
+.DS_Store
+Thumbs.db
