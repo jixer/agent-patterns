@@ -4,3 +4,25 @@
 # OS Files
 .DS_Store
 Thumbs.db
+
+# .NET Debugging Ignores
+.vs/
+obj/
+bin/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Python Debugging Ignores
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+.env/
+venv/
+venv.bak/
+env.bak/
+.ipynb_checkpoints/
+
