@@ -1,0 +1,41 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shared", "shared", "{4F52FD11-658E-A102-6CD3-7D7C16FFA15B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "patterns", "patterns", "{A1B3DA4F-7E4D-9C63-7271-7C9E534D4ACE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "infra", "shared\dotnet-infra\infra.csproj", "{049C86CE-D661-BFF2-1751-19ABEE7F2733}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tool-calling", "tool-calling", "{225A35D2-F289-5C5A-216D-C044672B1DD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tool-calling-sample", "patterns\tool-calling\agent-framework\tool-calling-sample.csproj", "{792BC12F-7031-B50B-41A3-39E254101C7B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{049C86CE-D661-BFF2-1751-19ABEE7F2733}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{049C86CE-D661-BFF2-1751-19ABEE7F2733}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{049C86CE-D661-BFF2-1751-19ABEE7F2733}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{049C86CE-D661-BFF2-1751-19ABEE7F2733}.Release|Any CPU.Build.0 = Release|Any CPU
+		{792BC12F-7031-B50B-41A3-39E254101C7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{792BC12F-7031-B50B-41A3-39E254101C7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{792BC12F-7031-B50B-41A3-39E254101C7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{792BC12F-7031-B50B-41A3-39E254101C7B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{049C86CE-D661-BFF2-1751-19ABEE7F2733} = {4F52FD11-658E-A102-6CD3-7D7C16FFA15B}
+		{225A35D2-F289-5C5A-216D-C044672B1DD4} = {A1B3DA4F-7E4D-9C63-7271-7C9E534D4ACE}
+		{792BC12F-7031-B50B-41A3-39E254101C7B} = {225A35D2-F289-5C5A-216D-C044672B1DD4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5F90861F-6384-4290-A8F2-D5A88ABFCAFC}
+	EndGlobalSection
+EndGlobal
