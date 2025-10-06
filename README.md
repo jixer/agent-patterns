@@ -1,5 +1,14 @@
 This repository is intended to be used as a toolkit. The source code and documentation herein is not intended to be used as a framework or end-to-end solution. The source code can be forked at an individual level and included in another project as an accelerator, but this repository intends to yield value by documenting different patterns and approaches with very light weight examples implemented using different agentic frameworks.
 
+# Contents
+Within this repository, you will find the following guidance:
+- **Patterns**
+  These are the lowest level guidance. They are framework agnostic and represent agentic engineerins patterns that can be used across any framework. These are the core building blocks that will be used together in order to build end-to-end agent solutions. For each pattern, you will find an overview of the pattern along with code samples as described in the [Pattern Directory Structure](#pattern-structure)
+
+- **Recipes**
+  Recipes are akin to a cooking recipe. They will leverage numerous different ingredients (patterns) and utensils (agentic frameworks) in order to create an entire dish (end-to-end agent example). With recipes, we will leverage specific platforms and frameworks (e.g., Semantic Kernel, Agent Framework, Copilot Studio). These recipes are there to provide larger exemplar implementations of patterns, but are not here to dictate the only optimal selection of frameworks and platforms could not be used.
+
+
 # Directory Structure
 Here is the structure for how patterns are captured within this repository:
 ```bash
