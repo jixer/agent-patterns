@@ -2,10 +2,7 @@
 
 using System;
 using Azure.AI.OpenAI;
-using Azure.Identity;
-using Microsoft.Agents.AI;
 using OpenAI;
-using Neudesic.Agents.Patterns.Shared.DotNetInfra;
 using Neudesic.Agents.Patterns.Shared.DotNetInfra.Configuration;
 using Azure;
 using System.ComponentModel;
