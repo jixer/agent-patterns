@@ -6,6 +6,7 @@ using Azure.Identity;
 using Microsoft.Agents.AI;
 using OpenAI;
 using Neudesic.Agents.Patterns.Shared.DotNetInfra;
+using Neudesic.Agents.Patterns.Shared.DotNetInfra.Configuration;
 using Azure;
 using System.ComponentModel;
 using Microsoft.Extensions.AI;
@@ -20,23 +21,14 @@ class Program
 
     static async Task Main(string[] args)
     {
-        // Load environment variables from .env file if it exists
-        DotEnv.TryLoad();
+        // Fetch settings from .env
+        var settings = AppSettingsFactory.LoadFromDotEnv();
+        
 
-        // Ensure required environment variables are set
-        var endpoint = Environment.GetEnvironmentVariable("AZURE_OPENAI_ENDPOINT");
-        var deploymentName = Environment.GetEnvironmentVariable("AZURE_OPENAI_DEPLOYMENT_NAME");
-        var key = Environment.GetEnvironmentVariable("AZURE_OPENAI_KEY");
-        if (string.IsNullOrEmpty(endpoint) || string.IsNullOrEmpty(deploymentName) || string.IsNullOrEmpty(key))
-        {
-            Console.WriteLine("Please set the AZURE_OPENAI_ENDPOINT, AZURE_OPENAI_DEPLOYMENT_NAME, and AZURE_OPENAI_KEY environment variables.");
-            return;
-        }
-
-        var cred = new AzureKeyCredential(key);
+        var cred = new AzureKeyCredential(settings.AzureOpenAIKey);
 #pragma warning disable OPENAI001 // Suppress 'evaluation purposes only' warning
-        var client = new AzureOpenAIClient(new Uri(endpoint), cred)
-                        .GetChatClient(deploymentName)
+        var client = new AzureOpenAIClient(new Uri(settings.AzureOpenAIEndpoint), cred)
+                        .GetChatClient(settings.AzureOpenAIDeploymentName)
                         .CreateAIAgent(name: "ToolBot",
                                     instructions: "You are an upbeat assistant that helps users.",
                                     tools: [AIFunctionFactory.Create(Add)]);
