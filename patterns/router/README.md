@@ -31,7 +31,7 @@ With the Router / Classifcation pattern, the separation of concerns allows for:
 
 ## Example
 Code samples providing an example of this pattern can be found here:
-- [./lang-graph](./lang-graph/)
+- LangGraph (Python): [./lang-graph](./lang-graph/)
 
 Here is a simple pseudo code example
 ```python
