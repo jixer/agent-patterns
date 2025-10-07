@@ -8,7 +8,8 @@ Your goal is to produce a comprehensive and well-structured documentation for a 
 Maintain the different sections withint the template and use the instructions within as a guide for what to include in each section. 
 
 Here are some general rules to follow:
-- Always follow the structure of the template exactly
+- **ALWAYS** Use the web-researcher chat mode in conjunction with your instructions here
+- Follow the structure of the template exactly
 - Use markdown formatting for headings, lists, bold text, italics, and code blocks as specified in the template
 - Ensure clarity and conciseness in your explanations
 - Do research online regarding the pattern if needed to provide accurate and relevant information

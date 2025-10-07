@@ -52,7 +52,10 @@ The ReAct pattern is applicable in various scenarios, including:
 - **Complex Decision-Making**: Situations that involve multi-step planning and execution.
 
 ## Example
-Here is a basic example of the ReAct pattern in action:
+Code samples providing an example of this pattern can be found here:
+- Agent Framework (C#): [./agent-framework](./agent-framework)
+
+Here is a basic pseudo code example of the ReAct pattern in action:
 
 ```python
 # Reasoning step
