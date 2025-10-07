@@ -10,7 +10,9 @@ Within this repository, you will find the following guidance:
 
 # Patterns Table of Contents
 The following patterns are captured currently in this repository:
-- [**Tool Calling**](patterns/tool-calling/README.md): Tool Calling, also known as Function Calling, is a design pattern that enables agents to interact with external systems, APIs, or functions. This pattern allows agents to go beyond language-only reasoning by invoking external tools to perform specific tasks.
+- [**ReAct (Reasoning + Acting)**](patterns/react/): A systematic approach for enabling agents to alternate between reasoning about tasks and taking actions in an iterative loop, allowing agents to dynamically solve problems by grounding their reasoning in observable results from actions.
+- [**Router / Classifier**](patterns/router/): A design pattern used in agent-based systems to classify user input and direct it to the most appropriate specialized task, model, or downstream agent.
+- [**Tool Calling (Function Calling)**](patterns/tool-calling/): A design pattern that enables agents to interact with external systems, APIs, or functions, allowing agents to go beyond language-only reasoning by invoking external tools to perform specific tasks.
 
 > [!WARNING]
 > There are many more patterns than what are captured in this repository. Do not consider this an exhaustive list. We will capture as many as we can with the time we have.
