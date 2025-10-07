@@ -29,7 +29,11 @@ With the Router / Classifcation pattern, the separation of concerns allows for:
 - **Specialized Tasks/Agents**: Downstream agents or models optimized for specific tasks.
 - **Feedback Loop**: Optional mechanism for refining classification and routing over time.
 
-### Example
+## Example
+Code samples providing an example of this pattern can be found here:
+- [./lang-graph](./lang-graph/)
+
+Here is a simple pseudo code example
 ```python
 class RouterAgent:
     def __init__(self):
